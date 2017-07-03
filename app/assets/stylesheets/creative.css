@@ -225,20 +225,17 @@ header .header-content .header-content-inner p {
   margin-bottom: 0;
 }
 
-.popup-gallery {
-  text-align: center;
-}
-
 .portfolio-box {
   position: relative;
-  display: inline-block;
-  width: 48%;
-  min-width: 400px;
-  height: 330px;
-  padding: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  display: block;
+  max-width: 650px;
+  margin: 0 auto;
 }
+
+.portfolio-box img {
+  max-width: 100%;
+}
+
 .portfolio-box .portfolio-box-caption {
   color: white;
   opacity: 0;
@@ -449,14 +446,6 @@ ul.footer-icons {
   font-size: 10px;
 }
 
-.yelp-review {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  border: 1px solid gray;
-  background-color: white;
-}
-
 .review-read-more .u-text-centered {
 display:none;
 }
@@ -486,12 +475,6 @@ display:none;
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;  
-}
-
-#reviews {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-color: gray;
 }
 
 #quotes {
