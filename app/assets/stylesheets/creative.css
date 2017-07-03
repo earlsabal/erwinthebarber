@@ -128,7 +128,7 @@ aside {
   }
   .navbar-default.affix {
     background-color: black;
-    border-color: rgba(34, 34, 34, 0.05);
+    border-color: #383838;
   }
   .navbar-default.affix .navbar-header .navbar-brand {
     color: gray;
@@ -308,7 +308,7 @@ header .header-content .header-content-inner p {
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
   color: #222222;
-  background-color: #f2f2f2;
+  background-color: gray;
   border-color: #ededed;
 }
 .btn-default:active,
