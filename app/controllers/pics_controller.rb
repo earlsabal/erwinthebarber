@@ -7,10 +7,6 @@ class PicsController < ApplicationController
 		@pic = Pic.find(params[:id])
 	end
 
-	def new
-		@pic = Pic.new
-	end
-
 	def create
 		@pic = Pic.new(pic_params)
 		if @pic.save
@@ -19,10 +15,6 @@ class PicsController < ApplicationController
 			@errors = @pic.errors.full_messages
 			render "new"
 		end
-	end
-
-	def edit
-
 	end
 
 	def update
