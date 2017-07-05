@@ -50,6 +50,9 @@ p {
   background-color: #222222;
   color: white;
 }
+.bg-light {
+  background-color: lightgray;
+}
 .text-faded {
   color: rgba(255, 255, 255, 0.7);
 }
@@ -445,21 +448,14 @@ ul.footer-icons {
   font-size: 10px;
 }
 
-/*.information {
-  text-align: center;
-}
-
-.contact-info {
-  width: 30%;
-  display: inline-block;
-  vertical-align: top;
-  padding-top: 30px;
-}*/
-
 .outline {
     text-shadow:
     -1px -1px 0 #000,
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;  
+}
+
+#portfolio {
+  padding-top: 30px;
 }
