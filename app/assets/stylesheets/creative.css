@@ -445,19 +445,7 @@ ul.footer-icons {
   font-size: 10px;
 }
 
-.review-read-more .u-text-centered {
-display:none;
-}
-
-.review-content{
-  color:red;
-}
-
-.map {
-  margin-bottom: 30px;
-}
-
-.information {
+/*.information {
   text-align: center;
 }
 
@@ -466,7 +454,7 @@ display:none;
   display: inline-block;
   vertical-align: top;
   padding-top: 30px;
-}
+}*/
 
 .outline {
     text-shadow:
@@ -474,13 +462,4 @@ display:none;
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;  
-}
-
-#quotes {
-  background-color: lightgray;
-}
-
-.quotes img {
-  height: 60px;
-  width: 60px;
 }
