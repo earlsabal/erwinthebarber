@@ -7,6 +7,10 @@ class HaircutsController < ApplicationController
 		@haircut = Haircut.find(params[:id])
 	end
 
+	def new
+		@haircut = Haircut.new
+	end
+
 	def create
 		@haircut = Haircut.new(haircut_params)
 		if @haircut.save
@@ -15,6 +19,10 @@ class HaircutsController < ApplicationController
 			@errors = @haircut.errors.full_messages
 			render "new"
 		end
+	end
+
+	def edit
+		@haircut = Haircut.find(params[:id])
 	end
 
 	def update
