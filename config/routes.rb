@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root to:"pages#home"
 
-  resources :haircuts do
+  resources :haircuts, only: [:index, :new, :create, :edit, :update, :destroy] do
   	resources :pics
   end
 

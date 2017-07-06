@@ -3,10 +3,6 @@ class HaircutsController < ApplicationController
 		@haircuts = Haircut.all
 	end
 
-	def show
-		@haircut = Haircut.find(params[:id])
-	end
-
 	def new
 		@haircut = Haircut.new
 	end
@@ -26,6 +22,7 @@ class HaircutsController < ApplicationController
 	end
 
 	def update
+		@haircut = Haircut.find(params[:id])
 		if @haircut.update(haircut_params)
 			flash[:success] = "Haircut updated."
 			redirect_to @haircut
