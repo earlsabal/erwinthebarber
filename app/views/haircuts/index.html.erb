@@ -9,16 +9,18 @@
   </div>
 </header>
 
-<div id="haircuts">
-	<% @haircuts.each_with_index do |haircut, i| %>
-		<% if i % 2 == 0 %>
-			<section>
-				<%= render haircut %>
-			</section>
-		<% else %>
-			<section class="bg-dark">
-				<%= render haircut %>
-			</section>
+<% if @haircuts %>
+	<div id="haircuts">
+		<% @haircuts.each_with_index do |haircut, i| %>
+			<% if i % 2 == 0 %>
+				<section>
+					<%= render haircut %>
+				</section>
+			<% else %>
+				<section class="bg-dark">
+					<%= render haircut %>
+				</section>
+			<% end %>
 		<% end %>
-	<% end %>
-</div>
+	</div>
+<% end %>
