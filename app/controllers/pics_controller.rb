@@ -1,4 +1,7 @@
 class PicsController < ApplicationController
+
+	before_action :authenticate_admin!, only: [:new, :create, :edit, :update, :destroy]
+
 	def index
 		@pics = Pic.all
 	end
@@ -16,7 +19,7 @@ class PicsController < ApplicationController
 		@pic = Pic.new(pic_params)
 		@haircut = @pic.haircut
 		if @pic.save
-			redirect_to haircuts_path
+			redirect_to haircuts_path	
 		else
 			@errors = @pic.errors.full_messages
 			render "new"
@@ -33,7 +36,7 @@ class PicsController < ApplicationController
 		@haircut = @pic.haircut
 		if @pic.update(pic_params)
 			flash[:success] = "Pic updated."
-			redirect_to haircuts_path
+			redirect_to haircuts_path	
 		else
 			@errors = @pic.errors.full_messages
 			puts @pic.haircut
@@ -44,7 +47,7 @@ class PicsController < ApplicationController
 	def destroy
 		@pic = Pic.find(params[:id])
 		@pic.destroy
-		redirect_to haircuts_path
+		redirect_to haircuts_path	
 	end
 
 	private

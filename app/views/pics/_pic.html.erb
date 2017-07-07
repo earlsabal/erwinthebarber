@@ -12,8 +12,10 @@
       </div>
     </div>
   </a>
-  <br>
-<%= link_to 'Edit Pic', edit_haircut_pic_path(pic.haircut, pic), :method => :get %> |
-<%= link_to 'Delete Pic', haircut_pic_path(pic.haircut, pic), :method => :delete, 
-  data: {confirm: "Are you sure you want to delete this pic?"} %>
+  <% if admin_signed_in? %>    
+    <br>
+    <%= link_to 'Edit Pic', edit_haircut_pic_path(pic.haircut, pic), :method => :get %> |
+    <%= link_to 'Delete Pic', haircut_pic_path(pic.haircut, pic), :method => :delete, 
+      data: {confirm: "Are you sure you want to delete this pic?"} %>
+  <% end %>
 </div>
