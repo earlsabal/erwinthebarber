@@ -4,12 +4,16 @@
     <div class="portfolio-box-caption">
       <div class="portfolio-box-caption-content">
         <div class="project-category text-faded">
-          Category
+          <%= pic.title %>
         </div>
         <div class="project-name">
-          Project Name
+          <%= pic.body %>
         </div>
       </div>
     </div>
   </a>
+  <br>
+<%= link_to 'Edit Pic', edit_haircut_pic_path(pic.haircut, pic), :method => :get %> |
+<%= link_to 'Delete Pic', haircut_pic_path(pic.haircut, pic), :method => :delete, 
+  data: {confirm: "Are you sure you want to delete this pic?"} %>
 </div>
