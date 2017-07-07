@@ -10,5 +10,15 @@
 </header>
 
 <div id="haircuts">
-	<%= render @haircuts %>
+	<% @haircuts.each_with_index do |haircut, i| %>
+		<% if i % 2 == 0 %>
+			<section>
+				<%= render haircut %>
+			</section>
+		<% else %>
+			<section class="bg-dark">
+				<%= render haircut %>
+			</section>
+		<% end %>
+	<% end %>
 </div>
