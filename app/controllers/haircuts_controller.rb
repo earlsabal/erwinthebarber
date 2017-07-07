@@ -10,7 +10,7 @@ class HaircutsController < ApplicationController
 	def create
 		@haircut = Haircut.new(haircut_params)
 		if @haircut.save
-			redirect_to @haircut
+			redirect_to haircuts
 		else
 			@errors = @haircut.errors.full_messages
 			render "new"
@@ -25,7 +25,7 @@ class HaircutsController < ApplicationController
 		@haircut = Haircut.find(params[:id])
 		if @haircut.update(haircut_params)
 			flash[:success] = "Haircut updated."
-			redirect_to @haircut
+			redirect_to haircuts
 		else
 			@errors = @haircut.errors.full_messages
 			render "edit"

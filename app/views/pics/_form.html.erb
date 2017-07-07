@@ -1,0 +1,22 @@
+<div class="outline">	
+	<%= form_for [haircut, haircut.pics.build] do |f| %>
+	  <p> 
+	    <%= f.label :title %><br>
+	    <%= f.text_field :title, :class => "input-text" %>
+	  </p>
+
+	  <p>   
+	    <%= f.label :body %><br>
+	    <%= f.text_area :body, :class => "input-text"  %>
+	  </p>
+
+	  <p> 
+	    <%= f.label :url %><br>
+	    <%= f.text_field :url, :class => "input-text" %>
+	  </p>
+
+	  <%= f.hidden_field :haircut_id, value: haircut.id %>
+
+	  <%= f.button :submit, :class => "btn btn-primary btn-xl" %>
+	<% end %>
+</div>
