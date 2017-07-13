@@ -1,24 +1,35 @@
-# README
+# Erwin The Barber
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Website built for a barber displaying his contact info, his skills, his portfolio and links to his social media.  Information still needs to be added based on the client's request, but the template is already made.
 
-Things you may want to cover:
+## Top of Home Page
 
-* Ruby version
+![](screenshots/screenshot1.png?raw=true)
 
-* System dependencies
+## About Section on Home Page
 
-* Configuration
+![](screenshots/screenshot2.png?raw=true)
 
-* Database creation
+## Preview of Portfolio on Home Page
 
-* Database initialization
+![](screenshots/screenshot3.png?raw=true)
 
-* How to run the test suite
+## Contact information on Home Page
 
-* Services (job queues, cache servers, search engines, etc.)
+![](screenshots/screenshot4.png?raw=true)
 
-* Deployment instructions
+## Portfolio Page
 
-* ...
+Haircut with a title, description and pictures at multiple angles
+
+![](screenshots/screenshot5.png?raw=true)
+
+[Erwin the Barber Website](https://erwinthebarber.herokuapp.com/)
+
+### Technologies used
+
+This website is built with Ruby on Rails implementing the MVC structure.  Views are html.erb files styled with CSS along with a few JavaScript/jQuery features
+
+### Future goals
+
+I plan to connect this application to Amazon Web Services so that Admins of this website can upload pictures on the website instead of using image urls to display pictures
