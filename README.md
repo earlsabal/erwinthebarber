@@ -1,6 +1,6 @@
 # Erwin The Barber
 
-Website built for a barber displaying his contact info, his skills, his portfolio and links to his social media.  Information still needs to be added based on the client's request, but the template is already made.
+Website built for a barber displaying information about him, his contact info, his skills, his portfolio and links to his social media.
 
 ## Top of Home Page
 
