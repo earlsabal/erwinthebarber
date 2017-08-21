@@ -1,4 +1,5 @@
 class AddressesController < ApplicationController
+
 	def edit
 		@address = Address.find(params[:id])
 	end
@@ -18,4 +19,5 @@ class AddressesController < ApplicationController
 	def address_params
 		params.require(:address).permit(:name, :number, :street, :city, :state)
 	end
+	
 end
