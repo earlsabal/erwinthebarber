@@ -1,0 +1,31 @@
+<header>
+  <div class="header-content">
+
+    <div class="outline">	
+			<%= form_for @addresss do |f| %>
+			  <p> 
+			    <%= f.label :number %><br>
+			    <%= f.text_field :number, :class => "input-text" %>
+			  </p>
+
+			  <p> 
+			    <%= f.label :street %><br>
+			    <%= f.text_field :street, :class => "input-text" %>
+			  </p>
+
+			  <p> 
+			    <%= f.label :city %><br>
+			    <%= f.text_field :city, :class => "input-text" %>
+			  </p>
+
+			  <p> 
+			    <%= f.label :state %><br>
+			    <%= f.text_field :state, :class => "input-text" %>
+			  </p>
+
+			  <%= f.button :submit, :class => "btn btn-primary btn-xl" %>
+			<% end %>
+		</div>  
+		
+  </div>
+</header>
