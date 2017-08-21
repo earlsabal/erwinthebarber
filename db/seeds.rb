@@ -82,8 +82,8 @@ Information.create(name: "phone",
 Information.create(name: "email",
 									 body: "balanon67@gmail.com")
 
-Address.create(name: "",
+Address.create(name: "main",
 							 number: "",
 							 street: "",
-							 city: "",
-							 state: "")
+							 city: "Stockton",
+							 state: "CA")
