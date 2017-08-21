@@ -12,15 +12,16 @@
     <div class="row text-center">
       <div class="col-md-4">
         <i class="fa fa-phone fa-3x sr-contact"></i>
-        <p>(209) 298-2804</p>
+        <p><%= find_phone %></p>
       </div>
       <div class="col-md-4">
         <i class="fa fa-map-marker fa-3x sr-contact"></i>
-        <p>I am located in <br>Stockton, CA</p>
+        <p><%= find_address.number_street %></p>
+        <p><%= find_address.city_state %></p>
       </div>
       <div class="col-md-4">
         <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-        <p><a href="mailto:SAMPLE@EMAIL.COM">balanon67@gmail.com</a></p>
+        <p><a href="mailto:<%= find_email %>"><%= find_email %></a></p>
       </div>
     </div>
   </div>
