@@ -471,3 +471,7 @@ ul.footer-icons {
   opacity: 0.9;
   width: 50%;
 }
+
+.text-white {
+  color: white;
+}

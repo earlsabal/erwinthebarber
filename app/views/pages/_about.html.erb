@@ -4,17 +4,18 @@
       <div class="col-lg-8 col-lg-offset-2 text-center">
         <h2 class="section-heading"><%= about_desc.title %></h2>
         <hr class="light">
-        <p class="text-faded"><%= about_desc.body %></p>
-
-        <% if admin_signed_in? %>    
-          <br>
-          <%= link_to 'Edit About', edit_about_path(about_desc), :method => :get %> |
-        <% end %>
+        <p class="text-faded">
+          <%= about_desc.body %>
+          <% if admin_signed_in? %>    
+            <br>
+            <%= link_to 'Edit About', edit_description_path(about_desc), :method => :get, :class => "text-white" %>
+          <% end %>
+        </p>
 
         <a href="#services" class="page-scroll btn btn-default btn-xl sr-button"><%= about_btn.body %></a>
         <% if admin_signed_in? %>    
           <br>
-          <%= link_to 'Edit About Button', edit_button_path(about_btn), :method => :get %> |
+          <%= link_to 'Edit About Button', edit_button_path(about_btn), :method => :get, :class => "text-white" %>
         <% end %>
 
       </div>
