@@ -39,9 +39,9 @@ Description.create(name: "services",
 # Services
 Service.create(title: "Skills", 
 							 body: "I cut both men and women's hair, facial hair, 
-									 				designs, fades and more.  If you have a specific 
-									 				haircut in mind, ask me and I'll let you know what I 
-									 				can do.",
+							 				designs, fades and more.  If you have a specific 
+							 				haircut in mind, ask me and I'll let you know what I 
+							 				can do.",
 							 icon: "fa-scissors") 
 
 Service.create(title: "Tools", 
