@@ -8,21 +8,41 @@
         <br>
       </div>
     </div>
+    <% if admin_signed_in? %>    
+      <br>
+      <%= link_to 'Edit Contact', edit_contact_path(contact_desc), :method => :get %> |
+    <% end %>
 
     <div class="row text-center">
+
       <div class="col-md-4">
         <i class="fa fa-phone fa-3x sr-contact"></i>
         <p><%= find_phone %></p>
       </div>
+      <% if admin_signed_in? %>    
+        <br>
+        <%= link_to 'Edit Phone', edit_information_path(phone_info), :method => :get %> |
+      <% end %>
+
       <div class="col-md-4">
         <i class="fa fa-map-marker fa-3x sr-contact"></i>
         <p><%= find_address.number_street %></p>
         <p><%= find_address.city_state %></p>
       </div>
+      <% if admin_signed_in? %>    
+        <br>
+        <%= link_to 'Edit Address', edit_address_path(find_address), :method => :get %> |
+      <% end %>
+
       <div class="col-md-4">
         <i class="fa fa-envelope-o fa-3x sr-contact"></i>
         <p><a href="mailto:<%= find_email %>"><%= find_email %></a></p>
       </div>
+      <% if admin_signed_in? %>    
+        <br>
+        <%= link_to 'Edit Email', edit_information_path(email_info), :method => :get %> |
+      <% end %>
+
     </div>
   </div>
 </section>
