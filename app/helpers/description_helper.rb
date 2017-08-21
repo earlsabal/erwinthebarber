@@ -1,31 +1,31 @@
 module DescriptionHelper
 	
 	def about_desc
-		Description.find(name: "about")
+		Description.find_by(name: "about")
 	end
 
 	def contact_desc
-		Description.find(name: "contact")
+		Description.find_by(name: "contact")
 	end
 
 	def haircuts_desc
-		Description.find(name: "haircuts")
+		Description.find_by(name: "haircuts")
 	end
 
 	def header_desc
-		Description.find(name: "header")
+		Description.find_by(name: "header")
 	end
 
 	def instagram_desc
-		Description.find(name: "instagram")
+		Description.find_by(name: "instagram")
 	end
 
 	def portfolio_desc
-		Description.find(name: "portfolio")
+		Description.find_by(name: "portfolio")
 	end
 
 	def services_desc
-		Description.find(name: "services")
+		Description.find_by(name: "services")
 	end
 
 end
