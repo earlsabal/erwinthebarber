@@ -10,10 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170821061554) do
+ActiveRecord::Schema.define(version: 20170821065732) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "addresses", force: :cascade do |t|
+    t.string "name"
+    t.string "number"
+    t.string "street"
+    t.string "city"
+    t.string "state"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "admins", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -32,6 +42,13 @@ ActiveRecord::Schema.define(version: 20170821061554) do
     t.index ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true
   end
 
+  create_table "buttons", force: :cascade do |t|
+    t.string "name"
+    t.string "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "descriptions", force: :cascade do |t|
     t.string "name"
     t.string "title"
@@ -47,6 +64,13 @@ ActiveRecord::Schema.define(version: 20170821061554) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "information", force: :cascade do |t|
+    t.string "name"
+    t.string "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "pics", force: :cascade do |t|
     t.string "url"
     t.string "title"
@@ -55,6 +79,14 @@ ActiveRecord::Schema.define(version: 20170821061554) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["haircut_id"], name: "index_pics_on_haircut_id"
+  end
+
+  create_table "services", force: :cascade do |t|
+    t.string "title"
+    t.text "body"
+    t.string "icon"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
