@@ -1,0 +1,16 @@
+<header>
+  <div class="header-content">
+
+    <div class="outline">	
+			<%= form_for @button do |f| %>
+			  <p> 
+			    <%= f.label :body %><br>
+			    <%= f.text_area :body, :class => "input-text" %>
+			  </p>
+
+			  <%= f.button :submit, :class => "btn btn-primary btn-xl" %>
+			<% end %>
+		</div>  
+		
+  </div>
+</header>
