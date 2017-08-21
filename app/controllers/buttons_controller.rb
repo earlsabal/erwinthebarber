@@ -1,4 +1,5 @@
 class ButtonsController < ApplicationController
+
 	def edit
 		@button = Button.find(params[:id])
 	end
@@ -18,4 +19,5 @@ class ButtonsController < ApplicationController
 	def button_params
 		params.require(:button).permit(:name, :body)
 	end
+	
 end

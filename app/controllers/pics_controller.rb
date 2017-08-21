@@ -54,4 +54,5 @@ class PicsController < ApplicationController
   def pic_params
     params.require(:pic).permit(:haircut_id, :title, :url, :body)
   end
+
 end

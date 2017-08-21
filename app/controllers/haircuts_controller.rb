@@ -45,4 +45,5 @@ class HaircutsController < ApplicationController
   def haircut_params
     params.require(:haircut).permit(:name, :description)
   end
+
 end

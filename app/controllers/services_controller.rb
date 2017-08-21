@@ -1,4 +1,5 @@
 class ServicesController < ApplicationController
+
 	def edit
 		@service = Service.find(params[:id])
 	end
@@ -18,4 +19,5 @@ class ServicesController < ApplicationController
 	def service_params
 		params.require(:service).permit(:title, :body, :icon)
 	end
+	
 end
