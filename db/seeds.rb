@@ -63,6 +63,9 @@ Service.create(title: "Customers",
 							 icon: "fa-smile-o")
 
 # Buttons
+Button.create(name: "about",
+							body: "Get Started!")
+
 Button.create(name: "haircut",
 							body: "See Haircuts")
 
