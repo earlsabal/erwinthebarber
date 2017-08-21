@@ -2,6 +2,12 @@
 	<div class="service-box">
 	  <i class="fa fa-4x <%= service.icon %> text-primary sr-icons"></i>
 	  <h3><%= service.title %></h3>
-	  <p class="text-muted"><%= service.body %></p>
+	  <p class="text-muted">
+	  	<%= service.body %>
+	  	<% if admin_signed_in? %>    
+        <br>
+        <%= link_to 'Edit ' + service.title, edit_service_path(service), :method => :get %>
+      <% end %>
+	  </p>
 	</div>
 </div>
