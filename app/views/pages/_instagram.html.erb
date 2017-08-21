@@ -1,8 +1,19 @@
 <aside class="bg-dark">
   <div class="container text-center">
     <div class="call-to-action">
+
       <h2><%= instagram_desc.title %></h2>
+      <% if admin_signed_in? %>    
+        <br>
+        <%= link_to 'Edit Instagram', edit_description_path(instagram_desc), :method => :get %> |
+      <% end %>
+
       <a href="https://www.instagram.com/erwinthebarber/?hl=en" class="btn btn-default btn-xl sr-button"><%= instagram_btn.body %></a>
+      <% if admin_signed_in? %>    
+        <br>
+        <%= link_to 'Edit Instagram Button', edit_button_path(header_btn), :method => :get %> |
+      <% end %>
+
     </div>
   </div>
 </aside>

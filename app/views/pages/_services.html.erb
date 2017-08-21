@@ -5,6 +5,11 @@
       <div class="col-lg-12 text-center">
         <h2 class="section-heading"><%= services_desc.title %></h2>
         <hr class="primary">
+        <% if admin_signed_in? %>    
+	        <br>
+	        <%= link_to 'Edit Service', edit_description_path(services_desc), :method => :get %> |
+	      <% end %>
+
       </div>
       <%= render @services %>
       

@@ -1,10 +1,21 @@
 <header>
   <div class="header-content">
     <div class="header-content-inner">
+
       <h1 id="homeHeading" class="outline"><%= header_desc.title %></h1>
       <hr>
       <p class="outline"><%= header_desc.body %></p>
+      <% if admin_signed_in? %>    
+        <br>
+        <%= link_to 'Edit Header', edit_description_path(header_desc), :method => :get %> |
+      <% end %>
+
       <a href="#about" class="btn btn-primary btn-xl page-scroll"><%= header_btn.body %></a>
+      <% if admin_signed_in? %>    
+        <br>
+        <%= link_to 'Edit Header Button', edit_button_path(header_btn), :method => :get %> |
+      <% end %>
+
     </div>
   </div>
 </header>

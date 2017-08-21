@@ -2,9 +2,15 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 text-center">
+
         <h2 class="section-heading"><%= portfolio_desc.title %></h2>
         <hr class="primary">
+        <% if admin_signed_in? %>    
+          <br>
+          <%= link_to 'Edit Portfolio', edit_description_path(portfolio_desc), :method => :get %> |
+        <% end %>
         <br>
+
       </div>
     </div>
 
