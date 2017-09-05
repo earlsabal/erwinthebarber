@@ -8,7 +8,7 @@ class DescriptionsController < ApplicationController
 		@description = Description.find(params[:id])
 		if @description.update(description_params)
 			flash[:success] = "Description updated."
-			redirect_to descriptions_path
+			redirect_to root_path
 		else
 			@errors = @description.errors.full_messages
 			render "edit"

@@ -8,7 +8,7 @@ class ButtonsController < ApplicationController
 		@button = Button.find(params[:id])
 		if @button.update(button_params)
 			flash[:success] = "Button updated."
-			redirect_to buttons_path
+			redirect_to root_path
 		else
 			@errors = @button.errors.full_messages
 			render "edit"

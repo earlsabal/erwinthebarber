@@ -8,7 +8,7 @@ class InformationsController < ApplicationController
 		@information = Information.find(params[:id])
 		if @information.update(information_params)
 			flash[:success] = "Information updated."
-			redirect_to informations_path
+			redirect_to root_path
 		else
 			@errors = @information.errors.full_messages
 			render "edit"

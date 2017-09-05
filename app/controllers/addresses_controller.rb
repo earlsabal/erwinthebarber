@@ -8,7 +8,7 @@ class AddressesController < ApplicationController
 		@address = Address.find(params[:id])
 		if @address.update(address_params)
 			flash[:success] = "Address updated."
-			redirect_to addresss_path
+			redirect_to root_path
 		else
 			@errors = @address.errors.full_messages
 			render "edit"

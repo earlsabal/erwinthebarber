@@ -8,7 +8,7 @@ class ServicesController < ApplicationController
 		@service = Service.find(params[:id])
 		if @service.update(service_params)
 			flash[:success] = "Service updated."
-			redirect_to services_path
+			redirect_to root_path
 		else
 			@errors = @service.errors.full_messages
 			render "edit"
