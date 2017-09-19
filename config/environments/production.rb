@@ -92,7 +92,7 @@ Rails.application.configure do
   # Amazon S3 storage configs for uploading pictures
   config.paperclip_defaults = {
     storage: :s3,
-    s3_host_name: 's3-us-west-1.amazonaws.com',
+    s3_protocol: 'http',
     s3_credentials: {
       bucket: ENV['AWS_S3_BUCKET'],
       access_key_id: ENV['AWS_ACCESS_KEY_ID'],
