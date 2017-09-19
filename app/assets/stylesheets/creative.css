@@ -475,3 +475,9 @@ ul.footer-icons {
 .text-white {
   color: white;
 }
+
+.input-file {
+  display: block;
+  margin: 0 auto;
+}
+
