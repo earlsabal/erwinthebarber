@@ -1,7 +1,7 @@
 class CreatePics < ActiveRecord::Migration[5.1]
   def change
     create_table :pics do |t|
-      t.string :url
+      t.attachment :image
       t.string :title
       t.text :body
       t.references :haircut
