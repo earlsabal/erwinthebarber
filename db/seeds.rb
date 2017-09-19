@@ -5,16 +5,17 @@ Description.create(name: "header",
 
 Description.create(name: "about", 
 									 title: "About Me", 
-									 body: "I am a barber who started in my garage and slowly 
-									 				working my way up.  I am now going to barber 
-									 				school and I am very passionate about cutting hair.  
-									 				Not only is cutting hair my art, but I love making 
-									 				people feel better about themselves.  I believe 
-									 				that a good confidence boost starts with a fresh 
-									 				haircut and I notice the difference in attitude when 
-									 				a person receives a new haircut.  My goal is to make 
-									 				sure you leave happy and feeling good.  Hit me up to 
-									 				make an appointment.")
+									 body: "Cutting hair is not just an art, but a passion. It is 
+									 				an enjoyment in helping people not only feel better 
+									 				about themselves, but to look good. I started at a 
+									 				young age in my garage cutting my friends' hairs. 
+									 				Then I worked my way up to cutting friends of friends 
+									 				hairs. Because I wanted to advance in this field, I 
+									 				decided to attend a barber school and now in the 
+									 				process of getting my license. My goal is to always 
+									 				have you leaving satisfied. You are more than a 
+									 				client to me, you are family. I appreciate you all 
+									 				and thank you for supporting my passion")
 
 Description.create(name: "contact", 
 									 title: "Need a Haircut?", 
