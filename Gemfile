@@ -37,7 +37,7 @@ gem 'devise'
 gem 'jquery-rails' 
 gem "font-awesome-rails"
 gem 'rails_12factor', group: :production
-gem 'aws-sdk', '~> 2'
+gem 'aws-sdk', '~> 1.61.0'
 gem 'paperclip'
 
 group :development, :test do
