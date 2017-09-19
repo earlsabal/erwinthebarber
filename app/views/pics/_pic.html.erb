@@ -1,6 +1,6 @@
 <div class="col-lg-4 col-sm-6">
-  <a href="<%= image_path(pic.url) %>" class="portfolio-box">
-    <%= image_tag(pic.url, :class => "img_responsive") %>
+  <a href="<%= image_path(pic.image.url(:original)) %>" class="portfolio-box">
+    <%= image_tag(pic.image.url, :class => "img_responsive") %>
     <div class="portfolio-box-caption">
       <div class="portfolio-box-caption-content">
         <div class="project-category text-faded">
