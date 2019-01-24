@@ -158,8 +158,8 @@ header {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url(header.jpg);
-  /*background-image: asset-data-url("header.jpg")*/
+  /*background-image: url(header.jpg);*/
+  background-image: url(<%= asset_path 'header.jpg' %>);
   text-align: center;
   color: white;
 }
