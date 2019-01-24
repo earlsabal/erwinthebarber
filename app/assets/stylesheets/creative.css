@@ -481,3 +481,10 @@ ul.footer-icons {
   margin: 0 auto;
 }
 
+.booking {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+}
+

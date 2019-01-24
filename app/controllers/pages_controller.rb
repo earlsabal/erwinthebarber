@@ -4,5 +4,9 @@ class PagesController < ApplicationController
 		@page = "home"
 		@services = Service.all
 	end
+
+	def booking
+		@page = "booking"
+	end
 	
 end

@@ -13,5 +13,6 @@ Rails.application.routes.draw do
   end
 
 	get '/archives', to: 'pics#index'
+  get '/booking', to: 'pages#booking'
 	
 end
